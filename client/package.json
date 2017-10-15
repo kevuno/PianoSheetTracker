@@ -2,7 +2,11 @@
   "name": "client",
   "version": "1.0.0",
   "description": "A Vue.js project",
+<<<<<<< b6ab9a85abeff6bfefc8da49dbc2761e817c4120
   "author": "Kevin Bastian <kjb5642@rit.edu>",
+=======
+  "author": "",
+>>>>>>> Added client
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
