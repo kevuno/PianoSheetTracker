@@ -1,21 +1,41 @@
 <template>
   <div>
-    <h1> Register </h1>
-    <form>
-        <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Email input" value="">
-                <span class="icon is-small is-left">
-                <i class="fa fa-envelope"></i>
-                </span>
+        <section class="section">
+            <div class="container is-one-fifth">
+                <h1 class="title"> Register </h1>
+                <p class="subtitle">
+                My first website with <strong>Bulma AND Vue.js</strong>!
+                </p>
+                <form>
+                    <div class="columns">
+                    <div class="column">
+    
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input" type="email" placeholder="Email input" v-model="email">
+                                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="column">
+                            <div class="field">
+                                <label class="label"> Password </label>
+                                <div class="control">
+                                    <input class="input" type="password" name="password" id="password" v-model="password">
+                                </div>
+                            </div>
+                    
+                    </div>
+                    </div>
+                </form>
+                
             </div>
-        </div>
+        </section>
 
 
-        <label for="password"> Password </label>
-        <input type="password" name="password" id="password">
-    </form>
+    
+
   </div>
   
 </template>
@@ -24,7 +44,9 @@
 export default {
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      email: 'Insert your email here',
+      password: ''
     }
   }
 }
